@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>未來世界通訊終端</title>
+<link rel="stylesheet" href="chat.css">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="device">
+  <div class="screen-header">
+    <div class="signal-dots">
+      <div class="signal-dot" style="height:6px"></div>
+      <div class="signal-dot" style="height:9px"></div>
+      <div class="signal-dot" style="height:12px"></div>
+      <div class="signal-dot" style="height:9px;opacity:0.4"></div>
+    </div>
+  </div>
+
+  <div class="phase-home" id="phaseHome">
+    <div class="contact-card">
+      <div class="contact-avatar-group">
+        <div class="avatar avatar-weng"><img src="oldman-白背景.png" alt="翁" class="avatar-img"></div>
+        <div class="avatar avatar-die"><img src="butterfly_student-白背景.png" alt="蝶" class="avatar-img"></div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-name">老翁 ＆ 蝶生</div>
+        <div class="contact-status"><span class="online-dot"></span>訊號連線中</div>
+      </div>
+    </div>
+    <div class="section-label">選擇話題，發起通訊</div>
+    <div class="question-list" id="homeQuestions"></div>
+  </div>
+
+  <div class="phase-chat" id="phaseChat">
+    <div class="chat-topbar">
+      <button class="back-btn" id="backBtn" aria-label="返回">&#8592;</button>
+      <div class="chat-contact-info">
+        <div class="chat-contact-name">老翁 ＆ 蝶生</div>
+        <div class="chat-status"><span class="online-dot"></span>通訊中</div>
+      </div>
+      <div class="chat-signal">
+        <span style="height:4px"></span>
+        <span style="height:7px"></span>
+        <span style="height:10px"></span>
+        <span style="height:7px;opacity:0.4"></span>
+      </div>
+    </div>
+
+    <div class="messages-area" id="messagesArea"></div>
+
+    <div class="divider-line"></div>
+
+    <div class="chat-questions" id="chatQuestions">
+      <div class="chat-q-label">繼續通話</div>
+      <div id="chatQList"></div>
+    </div>
+  </div>
+
+  <div class="screen-footer">
+    <div class="footer-dot active" id="dot1"></div>
+    <div class="footer-dot" id="dot2"></div>
+  </div>
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>
